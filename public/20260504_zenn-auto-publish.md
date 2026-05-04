@@ -1,11 +1,11 @@
 ---
-title: "Zennに自動で記事をアップロードする方法"
+title: Zennに自動で記事をアップロードする方法
 tags:
+  - GitHub
   - Zenn
   - Zenn-cli
-  - GitHub
 private: true
-updated_at: '2026-05-04T20:26:35+09:00'
+updated_at: '2026-05-04T20:58:21+09:00'
 id: 2bb5a1c964ccabd69ecf
 organization_url_name: null
 slide: false
