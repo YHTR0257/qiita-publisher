@@ -1,15 +1,15 @@
 ---
-title: Zennに自動で記事をアップロードする方法
+title: "Zennに自動で記事をアップロードする方法"
 tags:
-  - GitHub
   - Zenn
   - Zenn-cli
-private: true
+  - GitHub
+private: false
 updated_at: '2026-05-04T21:17:26+09:00'
 id: 2bb5a1c964ccabd69ecf
 organization_url_name: null
 slide: false
-ignorePublish: false
+ignorePublish: true
 ---
 
 :::note info
@@ -20,7 +20,7 @@ ignorePublish: false
 :::
 
 
-# Phase1: Installation - Zenn CLI/GitHub連携機能の導入
+# Phase1: Install - Zenn CLI/GitHub連携機能の導入
 
 以下の公式記事を参考にしてGitHubに適用していきます。今回はZenn専用レポジトリ `zenn-publisher` を作成しました。
 
@@ -86,9 +86,7 @@ Generating README.md skipped.
 
 ## STEP1: Articleの執筆
 いつも通りにMarkdownを書いてみる。
-
 Zenn が認識する Article のフロントマターは以下の通りです。
-
 ### フロントマター仕様
 
 | フィールド | 型 | 説明 |
@@ -101,7 +99,6 @@ Zenn が認識する Article のフロントマターは以下の通りです。
 | `published_at` | string | スケジュール投稿・バックデート（任意） |
 
 実際のファイルは以下のようになります：
-
 ```yaml
 ---
 title: "記事タイトル"
@@ -123,7 +120,6 @@ published_at: 2026-05-04 10:00
 
 
 ### Callout 変換
-
 Obsidian の callout 記法を Zenn に投稿する際は、`:::message` 記法に変換する必要があります。
 
 | Obsidian callout | Zenn 記法 |
@@ -165,9 +161,7 @@ Obsidian の callout 記法を Zenn に投稿する際は、`:::message` 記法�
 :::
 ```
 
-
 ### 使える記法
-
 Zenn が対応する主な記法は以下の通りです。
 
 #### コードブロック
@@ -181,7 +175,6 @@ def hello():
 ````
 
 #### メッセージブロック（Zenn 独自）
-
 ```markdown
 :::message
 情報メッセージ
@@ -193,7 +186,6 @@ def hello():
 ```
 
 #### アコーディオン（details）
-
 ```markdown
 :::details 詳細を見る
 折りたたまれた内容
@@ -201,7 +193,6 @@ def hello():
 ```
 
 #### 数式（KaTeX）
-
 ```markdown
 インライン: $E = mc^2$
 
@@ -212,7 +203,6 @@ $$
 ```
 
 #### Mermaid ダイアグラム
-
 ````markdown
 ```mermaid
 graph LR
@@ -221,10 +211,12 @@ graph LR
 ````
 
 #### 外部リンクの埋め込み
-URL を単独行に書くとカード形式で表示されます。
+URL を単独行に書くとカード形式で表示されます。前後一行空ける必要があります。
 
 ```markdown
+
 https://zenn.dev/zenn/articles/connect-to-github
+
 ```
 
 

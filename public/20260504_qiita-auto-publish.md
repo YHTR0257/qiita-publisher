@@ -1,15 +1,15 @@
 ---
-title: Qiitaに自動で記事をアップロードする方法
+title: "Qiitaに自動で記事をアップロードする方法"
 tags:
   - Qiita
   - GitHub
-  - qiita-cli
-private: true
+  - Qiita-CLI
+private: false
 updated_at: '2026-05-04T21:17:26+09:00'
 id: ce4496827930af15f891
 organization_url_name: null
 slide: false
-ignorePublish: false
+ignorePublish: true
 ---
 
 :::note info
@@ -21,7 +21,7 @@ ignorePublish: false
 
 ---
 
-## Phase1: Install
+## Phase1: Install - Qiita-CLIの導入
 
 インストールは以下の公式リンクを参照
 - [Qiitaの記事をGitHubリポジトリで管理する方法 - Qiita](https://qiita.com/Qiita/items/32c79014509987541130)
@@ -39,7 +39,7 @@ Qiitaの[設定](https://qiita.com/settings/tokens/new?read_qiita=1&write_qiita=
 - アクセストークンの説明: `auto-publisher`
 - スコープ: `read_qiita, write_qiita`
 
-![20260504_qiita-auto-publisher_2-1](https://pub-61138f8207b54a509ef5e6195db54d4f.r2.dev/images/20260504_qiita-auto-publisher_2-1.png)
+![20260504_qiita-auto-publisher_2-1](https://pub-61138f8207b54a509ef5e6195db54d4f.r2.dev/images/articles/20260504_qiita-auto-publisher_2-1.png)
 
 アクセストークンを発行したら、文字列をコピーしてください。
 発行したアクセストークンは、`Qiita CLIのログイン`と`GitHub ActionsのSecrets`の設定で使います。  
@@ -57,7 +57,6 @@ Qiitaの[設定](https://qiita.com/settings/tokens/new?read_qiita=1&write_qiita=
 Qiita CLI を使うには `Node.js 20.0.0` 以上が必要です。 Node.js をはじめて使う場合はインストールする必要があります。
 
 #### 3-2. Qiita CLI をインストールする
-
 :::note warn
 Qiita公式で提供している Qiita CLI の npm package 名は **@qiita/qiita-cli** となります。 その他は異なるパッケージがインストールされてしまいます。必ずご確認の上、インストールしてください。
 :::
@@ -71,14 +70,12 @@ added 110 packages in 3s
 47 packages are looking for funding
   run `npm fund` for details
 ```
-
 作成されると、npmのpackageが追加されます。
 ```bash
 % ls
 
 node_modules            package-lock.json       package.json            README.md
 ```
-
 以下のコマンドでバージョンが表示されればインストール完了です。
 ```bash
 % npx qiita version
@@ -128,8 +125,7 @@ Hi {{ ユーザー名 }}!
 
 ---
 
-## Phase2: Usage
-
+## Phase2: Usage - 実際に使ってみる
 ### フロントマター仕様
 
 qiita-cli が認識するフロントマターのフィールド一覧です。
