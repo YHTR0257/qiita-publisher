@@ -9,7 +9,7 @@ updated_at: '2026-05-04T21:17:26+09:00'
 id: 2bb5a1c964ccabd69ecf
 organization_url_name: null
 slide: false
-ignorePublish: true
+ignorePublish: false
 ---
 
 :::note info
@@ -19,9 +19,12 @@ ignorePublish: true
 - しかし、公式が推奨しているのはGitHub連携機能であるため、そちらの利用を推奨する
 :::
 
+# はじめに
+Zennの執筆を行う際に、ローカルで書いて、それをGitHubリポジトリで管理して、そこからZennに自動で投稿・更新したい！！！と強く思ったため、ZennのGitHub連携機能を導入してみました。
+思ったよりも簡単に導入できたので、導入方法と実際の使い方をまとめてみました。
 
+---
 # Phase1: Install - Zenn CLI/GitHub連携機能の導入
-
 以下の公式記事を参考にしてGitHubに適用していきます。今回はZenn専用レポジトリ `zenn-publisher` を作成しました。
 
 https://zenn.dev/zenn/articles/connect-to-github
@@ -31,14 +34,13 @@ https://zenn.dev/zenn/articles/install-zenn-cli
 https://github.com/zenn-dev/zenn-editor
 
 ## STEP1: リポジトリの作成
-
 GitHubで記事用のリポジトリを作成します。
 ここでは以下のように設定しました。
 - name: `zenn-publisher`
 - visibility: `public`
 
-## STEP2: CLIのインストール
-
+## STEP2: Zenn CLIのインストール
+Zenn CLIをインストールします。
 ```shell
 $ npm init --yes
 
@@ -57,7 +59,6 @@ found 0 vulnerabilities
 ```
 
 ## STEP3: Zenn用のセットアップ
-
 ```shell
 $ npx zenn init
 
