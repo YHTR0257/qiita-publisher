@@ -1,14 +1,14 @@
 ---
-title: "ローカルLLMを動かす基盤選び"
+title: ローカルLLMを動かす基盤選び
 tags:
-  - LocalLLM
-  - Ollama
-  - vLLM
   - 自作PC
-  - MacMini
+  - macmini
+  - vLLM
+  - ollama
+  - LocalLLM
 private: false
-updated_at: '2026-05-09T22:56:01+09:00'
-id: null
+updated_at: '2026-05-09T22:56:18+09:00'
+id: 31a8d972c2c39a2294ff
 organization_url_name: null
 slide: false
 ignorePublish: false
