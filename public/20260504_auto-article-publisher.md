@@ -1,14 +1,14 @@
 ---
-title: "Zenn/Qiitaに一つのMarkdownファイルから自動で記事をアップロードしたい！！！"
+title: Zenn/Qiitaに一つのMarkdownファイルから自動で記事をアップロードしたい！！！
 tags:
   - Qiita
-  - Zenn
   - GitHubActions
+  - Zenn
   - Obsidian
   - Cloudflare-R2
 private: false
-updated_at: ''
-id: null
+updated_at: '2026-05-09T17:37:53+09:00'
+id: f085935ecde930505467
 organization_url_name: null
 slide: false
 ignorePublish: false
