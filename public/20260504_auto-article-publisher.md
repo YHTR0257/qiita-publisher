@@ -3,9 +3,9 @@ title: "Zenn/Qiitaに一つのMarkdownファイルから自動で記事をアッ
 tags:
   - Qiita
   - Zenn
-  - 'GitHub Actions'
+  - GitHub-Actions
   - Obsidian
-  - 'Cloudflare R2'
+  - Cloudflare-R2
 private: false
 updated_at: ''
 id: null
