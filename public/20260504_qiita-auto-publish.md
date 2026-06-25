@@ -1,11 +1,11 @@
 ---
-title: "Qiitaに自動で記事をアップロードする方法"
+title: Qiitaに自動で記事をアップロードする方法
 tags:
   - Qiita
   - GitHub
-  - Qiita-CLI
+  - qiita-cli
 private: false
-updated_at: '2026-05-09T22:56:18+09:00'
+updated_at: '2026-06-25T10:27:08+09:00'
 id: ce4496827930af15f891
 organization_url_name: null
 slide: false
