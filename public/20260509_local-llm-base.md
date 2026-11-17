@@ -7,7 +7,7 @@ tags:
   - 自作PC
   - MacMini
 private: false
-updated_at: '2026-06-25T10:27:08+09:00'
+updated_at: '2026-11-17T00:58:56+09:00'
 id: 31a8d972c2c39a2294ff
 organization_url_name: null
 slide: false
